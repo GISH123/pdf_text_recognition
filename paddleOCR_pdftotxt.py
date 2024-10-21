@@ -19,7 +19,7 @@ class PDFRecognitionApp:
         self.label = Label(root, text="先點擊下方按鈕，選擇資料夾")
         self.label.pack()
 
-        self.choose_dir_button = Button(root, text="選擇要辨識的資料夾，會將該資料夾內所有pdf檔案做辨識", command=self.choose_data_directory)
+        self.choose_dir_button = Button(root, text="選擇要辨識的資料夾(注意!此資料夾辨識完的pdf將被移位)", command=self.choose_data_directory)
         self.choose_dir_button.pack()
 
         self.output_label = Label(root, text="產生的文字檔，存放資料夾之名稱(預設為output)")
@@ -27,7 +27,7 @@ class PDFRecognitionApp:
         self.output_entry = Entry(root)
         self.output_entry.pack()
 
-        self.start_button = Button(root, text="點擊按鈕開始辨識", command=self.start_processing_thread)
+        self.start_button = Button(root, text="點擊開始辨識", command=self.start_processing_thread)
         self.start_button.pack()
 
         self.progress_label = Label(root, text="當前進度:")
