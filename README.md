@@ -4,10 +4,6 @@ side_project_姑姑中華經研院文字辨識需求
 
 參考 https://github.com/PaddlePaddle/PaddleOCR/blob/main/doc/doc_en/quickstart_en.md  
 
-
-執行 paddleOCR_pdftotxt.py  
-
-
 ### environment
 conda create --name pdf_recog python=3.10
 pip install paddlepaddle-gpu # <= gpu version
@@ -41,12 +37,23 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 
 ### 執行方式
 
-下載zip檔案解壓縮，執行裡面的exe檔案，會跑出一個小介面(如果沒有的話應該就是被縮小了，請在下方工具列打開一個羽毛圖案的視窗)  
+下載上面的google drive連結，zip檔案解壓縮，執行裡面的exe檔案，會跑出一個小介面(如果沒有的話應該就是被縮小了，請在下方工具列打開一個羽毛圖案的視窗)  
 先點選上面的按鈕選擇要辨識的資料夾(裡面放pdf檔案，程式也只會抓副檔名為pdf的檔案)  
 然後點選下面的開始辨識按鈕
 
 如圖  
 ![Alt text](示意圖.png "preview")  
+
+執行完後，解壓縮後的資料夾裡面會有四個資料夾，  
+(1)error  
+辨識失敗的pdf會被移到這裡  
+(2)pass
+辨識成功的pdf會被移到這裡  
+(3)log
+啟動一次會有兩個檔案，error_log紀錄失敗原因與時間戳記，跟processing_log紀錄花費時間跟時間戳記  
+(4)output  
+產生之文字檔會放在這  
+
 
 ### 速度問題
 
