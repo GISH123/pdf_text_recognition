@@ -16,21 +16,21 @@ class PDFRecognitionApp:
         self.root = root
         root.title("PDF Recognition with PaddleOCR")
 
-        self.label = Label(root, text="Choose the input directory containing PDF files")
+        self.label = Label(root, text="先點擊下方按鈕，選擇資料夾")
         self.label.pack()
 
-        self.choose_dir_button = Button(root, text="Choose Input Directory", command=self.choose_data_directory)
+        self.choose_dir_button = Button(root, text="選擇要辨識的資料夾，會將該資料夾內所有pdf檔案做辨識", command=self.choose_data_directory)
         self.choose_dir_button.pack()
 
-        self.output_label = Label(root, text="Output Directory Name:")
+        self.output_label = Label(root, text="產生的文字檔，存放資料夾之名稱(預設為output)")
         self.output_label.pack()
         self.output_entry = Entry(root)
         self.output_entry.pack()
 
-        self.start_button = Button(root, text="Start Processing", command=self.start_processing_thread)
+        self.start_button = Button(root, text="點擊按鈕開始辨識", command=self.start_processing_thread)
         self.start_button.pack()
 
-        self.progress_label = Label(root, text="Progress:")
+        self.progress_label = Label(root, text="當前進度:")
         self.progress_label.pack()
         self.progress_bar = ttk.Progressbar(root, orient="horizontal", length=300, mode="determinate")
         self.progress_bar.pack()
@@ -42,7 +42,7 @@ class PDFRecognitionApp:
         if directory:
             global data_dir
             data_dir = directory
-            self.label.config(text=f"Selected Directory: {data_dir}")
+            self.label.config(text=f"當前選擇要辨識的資料夾: {data_dir}")
 
     def start_processing_thread(self):
         processing_thread = threading.Thread(target=self.start_processing)
