@@ -39,9 +39,9 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 
 參考 https://github.com/PaddlePaddle/PaddleOCR/blob/main/doc/doc_en/quickstart_en.md  
 
-conda create --name pdf_recog python=3.10
-pip install paddlepaddle-gpu # <= gpu version
-python -m pip install paddlepaddle
+conda create --name pdf_recog python=3.10  
+pip install paddlepaddle-gpu # <= gpu version  
+python -m pip install paddlepaddle  
 
 pip install PyMuPDF  
 pip install albumentations  
