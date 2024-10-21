@@ -1,0 +1,2 @@
+# pdf_text_recognition
+side_project_姑姑中華經研院文字辨識需求
