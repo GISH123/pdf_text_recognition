@@ -4,6 +4,8 @@ side_project_姑姑中華經研院文字辨識需求
 因檔案太大無法上傳至git，我存到google drive，以下網址可下載可使用的執行檔  
 https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive_link  
 
+建議在好一點的CPU的電腦上執行，差一點的電腦執行的話整個畫面會卡卡的，幾乎完全無法做其他事，也很容易中間過程辨識出問題失敗  
+
 ### 執行方式
 
 下載上面的google drive連結，zip檔案解壓縮，執行裡面的exe檔案，會跑出一個小介面(如果沒有的話應該就是被縮小了，請在下方工具列打開一個羽毛圖案的視窗)  
