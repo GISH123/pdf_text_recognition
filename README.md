@@ -15,7 +15,7 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 如圖  
 ![Alt text](示意圖.png "preview")  
 
-執行完後，解壓縮後的資料夾裡面會有四個資料夾，  
+執行完後，存放此程式的資料夾裡面會有四個子資料夾，  
 (1)error  
 辨識失敗的pdf會被移到這裡  
 (2)pass  
