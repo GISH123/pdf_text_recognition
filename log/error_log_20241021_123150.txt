@@ -1,0 +1,26 @@
+Error Log
+====================
+[2024-10-21 12:43:32] Error processing °²ªºpdf.pdf:
+Traceback (most recent call last):
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\pymupdf\__init__.py", line 2824, in __init__
+    doc = mupdf.fz_open_document(filename)
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\pymupdf\mupdf.py", line 45162, in fz_open_document
+    return _mupdf.fz_open_document(filename)
+pymupdf.mupdf.FzErrorFormat: code=7: no objects found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Gish.AI\Desktop\git_¤å¦r¿ëÃÑ\pdf_text_recognition\paddleOCR_pdftotxt.py", line 94, in start_processing
+    result = ocr.ocr(pdf_path, cls=True)
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\paddleocr\paddleocr.py", line 738, in ocr
+    img, flag_gif, flag_pdf = check_img(img, alpha_color)
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\paddleocr\paddleocr.py", line 590, in check_img
+    img, flag_gif, flag_pdf = check_and_read(image_file)
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\paddleocr\ppocr\utils\utility.py", line 138, in check_and_read
+    with fitz.open(img_path) as pdf:
+  File "C:\ProgramData\anaconda3\envs\pdf_recog\lib\site-packages\pymupdf\__init__.py", line 2827, in __init__
+    raise FileDataError(f'Failed to open file {filename!r}.') from e
+pymupdf.FileDataError: Failed to open file 'C:/Users/Gish.AI/Desktop/git_¤å¦r¿ëÃÑ/pdf_text_recognition/pdfs\\°²ªºpdf.pdf'.
+
+

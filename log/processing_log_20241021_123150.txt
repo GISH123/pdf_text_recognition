@@ -1,0 +1,6 @@
+Processing Log
+====================
+[2024-10-21 12:33:20] CA0001_51pages.pdf processed successfully in 90.61 seconds
+[2024-10-21 12:33:37] CA0002_10pages.pdf processed successfully in 16.68 seconds
+[2024-10-21 12:43:32] CA0003.pdf processed successfully in 595.24 seconds
+[2024-10-21 12:43:32] ERROR: Failed to process °²ªºpdf.pdf
