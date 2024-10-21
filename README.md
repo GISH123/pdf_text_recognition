@@ -18,9 +18,9 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 執行完後，解壓縮後的資料夾裡面會有四個資料夾，  
 (1)error  
 辨識失敗的pdf會被移到這裡  
-(2)pass
+(2)pass  
 辨識成功的pdf會被移到這裡  
-(3)log
+(3)log  
 啟動一次會有兩個檔案，error_log紀錄失敗原因與時間戳記，跟processing_log紀錄花費時間跟時間戳記  
 (4)output  
 產生之文字檔會放在這  
