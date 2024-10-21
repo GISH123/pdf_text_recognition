@@ -43,7 +43,9 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 
 conda create --name pdf_recog python=3.10  
 activate pdf_recog # venv  
+
 pip install paddlepaddle-gpu # <= gpu version  
+OR
 python -m pip install paddlepaddle  
 
 pip install PyMuPDF  
