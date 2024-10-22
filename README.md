@@ -6,6 +6,8 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 
 建議在好一點的CPU的電腦上執行，差一點的電腦執行的話整個畫面會卡卡的，幾乎完全無法做其他事，也很容易中間過程辨識出問題失敗  
 
+準度會因圖檔的良率(如傾斜、髒汙等)而有變動，如果準確度太低歡迎洽談我(lineID willyshao514)
+
 ### 執行方式
 
 下載上面的google drive連結，zip檔案解壓縮，執行裡面的exe檔案，會跑出一個小介面(如果沒有的話應該就是被縮小了，請在下方工具列打開一個羽毛圖案的視窗)  
