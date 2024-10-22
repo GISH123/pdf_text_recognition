@@ -111,4 +111,12 @@ RuntimeError: could not create a primitive
 
 看起來兩個查了一下都是CPU內存(RAM)不足導致  
 
+#### 20241022 嘗試使用自己的電腦來執行上面兩個在姑姑那邊電腦有問題的pdf檔案
+
+我電腦規格如下  
+![Alt text](電腦規格.png "GishAI_computer")  
+
+[2024-10-22 11:14:20] PR0002中共對我外貿競爭威脅及我方因應對策(1).pdf processed successfully in 417.56 seconds  
+[2024-10-22 12:40:08] 乙篇－新投資機會產品項目清單.pdf processed successfully in 5148.14 seconds  
+
 
