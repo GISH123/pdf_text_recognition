@@ -7,6 +7,8 @@ side_project_姑姑中華經研院文字辨識需求
 
 因檔案太大無法上傳至git，我存到google drive，以下網址可下載可使用的執行檔  
 https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive_link  
+20241021 release初版 測試可執行  
+
 
 建議在好一點的CPU的電腦上執行，差一點的電腦執行的話整個畫面會卡卡的，幾乎完全無法做其他事，也很容易中間過程辨識出問題失敗  
 
