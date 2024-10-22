@@ -81,7 +81,7 @@ pip install tkinter
 
 
 (1)  
-[2024-10-22 09:56:15] Error processing PR0002中共對我外貿競爭威脅及我方因應對策.pdf:
+[2024-10-22 09:56:15] Error processing AAAAAAAAAAAAAAAAAAAAAAAAAA.pdf:
 Traceback (most recent call last):
   File "paddleOCR_pdftotxt.py", line 94, in start_processing
   File "paddleocr\paddleocr.py", line 760, in ocr
@@ -94,7 +94,7 @@ RuntimeError: (PreconditionNotMet) Tensor holds no memory. Call Tensor::mutable_
   [Hint: holder_ should not be null.] (at ..\paddle\phi\core\dense_tensor_impl.cc:44)
 
 (2)  
-[2024-10-22 10:27:45] Error processing 乙篇－新投資機會產品項目清單.pdf:
+[2024-10-22 10:27:45] Error processing BBBBBBBBBBBBBBBBBBBBBBBBB.pdf:
 Traceback (most recent call last):
   File "paddleOCR_pdftotxt.py", line 94, in start_processing
   File "paddleocr\paddleocr.py", line 760, in ocr
