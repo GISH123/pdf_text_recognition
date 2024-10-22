@@ -116,6 +116,9 @@ RuntimeError: could not create a primitive
 我電腦規格如下  
 ![Alt text](電腦規格.png "GishAI_computer")  
 
+
+假設規格太差而不能執行(如RAM不夠導致out of memory)  
+想到的可能方案：做個資料前處理 將PDF以100頁做分割 比如一個1000頁的PDF拆成十個100頁的檔案再餵入PaddleOCR  
 [2024-10-22 11:14:20] PR0002中共對我外貿競爭威脅及我方因應對策(1).pdf processed successfully in 417.56 seconds  <=   148頁   
 [2024-10-22 12:40:08] 乙篇－新投資機會產品項目清單.pdf processed successfully in 5148.14 seconds  <=  883頁   
 
