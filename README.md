@@ -31,6 +31,9 @@ https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive
 (4)output  
 產生之文字檔會放在這  
 
+我選擇處理pdf辨識後用移位的 因為覺得會浪費存儲空間  
+如果怕檔案遺失的話 就將要辨識的PDF檔複製出來到一個隨便的資料夾 用程式跑該資料夾即可  
+
 
 ### 速度問題
 
@@ -72,3 +75,38 @@ pip install tkinter
 一本pdf約一小時(三個檔案執行時間約8000秒)  
 
 16核i7-11700電腦在執行辨識程式情形下還能玩遊戲，似乎比較不卡(補充:較少chrome分頁跟沒有背景通訊軟體程式)?  
+
+
+#### 20241022 issues   
+
+
+(1)  
+[2024-10-22 09:56:15] Error processing PR0002中共對我外貿競爭威脅及我方因應對策.pdf:
+Traceback (most recent call last):
+  File "paddleOCR_pdftotxt.py", line 94, in start_processing
+  File "paddleocr\paddleocr.py", line 760, in ocr
+    dt_boxes, rec_res, _ = self.__call__(img, cls, slice)
+  File "C:\Users\johnson5803\Desktop\paddleOCR_pdftotxt\_internal\paddleocr\tools\infer\predict_system.py", line 134, in __call__
+    img_crop_list, angle_list, elapse = self.text_classifier(img_crop_list)
+  File "C:\Users\johnson5803\Desktop\paddleOCR_pdftotxt\_internal\paddleocr\tools\infer\predict_cls.py", line 115, in __call__
+    prob_out = self.output_tensors[0].copy_to_cpu()
+RuntimeError: (PreconditionNotMet) Tensor holds no memory. Call Tensor::mutable_data firstly.
+  [Hint: holder_ should not be null.] (at ..\paddle\phi\core\dense_tensor_impl.cc:44)
+
+(2)  
+[2024-10-22 10:27:45] Error processing 乙篇－新投資機會產品項目清單.pdf:
+Traceback (most recent call last):
+  File "paddleOCR_pdftotxt.py", line 94, in start_processing
+  File "paddleocr\paddleocr.py", line 760, in ocr
+    dt_boxes, rec_res, _ = self.__call__(img, cls, slice)
+  File "C:\Users\johnson5803\Desktop\paddleOCR_pdftotxt\_internal\paddleocr\tools\infer\predict_system.py", line 109, in __call__
+    dt_boxes, elapse = self.text_detector(img)
+  File "C:\Users\johnson5803\Desktop\paddleOCR_pdftotxt\_internal\paddleocr\tools\infer\predict_det.py", line 396, in __call__
+    dt_boxes, elapse = self.predict(img)
+  File "C:\Users\johnson5803\Desktop\paddleOCR_pdftotxt\_internal\paddleocr\tools\infer\predict_det.py", line 255, in predict
+    self.predictor.run()
+RuntimeError: could not create a primitive
+
+看起來兩個查了一下都是CPU內存(RAM)不足導致  
+
+
