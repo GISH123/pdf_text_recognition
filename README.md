@@ -3,7 +3,7 @@ side_project_姑姑中華經研院文字辨識需求
 
 將圖檔(需求為PDF)經OCR辨識產生出文字檔的小工具
 
-需求：將一本一本書的圖檔(來源為PDF)轉為純文字，以供後續分析使用(GPT based)
+需求：將一本一本書的圖檔(來源為PDF)轉為純文字，以供後續分析(RAG based)使用
 
 因檔案太大無法上傳至git，我存到google drive，以下網址可下載可使用的執行檔  
 https://drive.google.com/file/d/1h6CwzvTACbjsJDo10YKmpbstmrNFu6Vw/view?usp=drive_link  
